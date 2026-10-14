@@ -1,0 +1,398 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, #000345 20%, #0009AB);
+    color: #ffffff;
+}
+
+/* CABEÇALHO */
+/* .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    gap: 20px;
+    background: rgba(0, 9, 171, 0.210);
+    backdrop-filter: blur(8px);
+    position: fixed;
+}
+
+.cabecalho nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+} */
+
+/* APRESENTAÇÃO */
+/* .inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    height: 80vh;
+    width: 100%;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+.apresentacao br {
+    font-size: 20px;
+    color: #E9A65A;
+}
+
+.avatar img {
+    max-width: 200px;
+    height: auto;
+    padding-right: 30px;
+} */
+/* 
+.btn-inicio {
+    background: linear-gradient(to left, #E9A65A, #835D33);
+    border: none;
+    color: #ffffff;
+    padding: 8px 80px;
+    cursor: pointer;
+    border-radius: 10px;
+} */ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, #000345 20%, #0009AB);
+    color: #ffffff;
+}
+
+/* CABEÇALHO FIXO */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 3, 69, 0.3);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* SEÇÃO INÍCIO (HERO) */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px 20px;
+    position: relative;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.apresentacao h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'sans-serif';
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.apresentacao h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.apresentacao h1 br {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.apresentacao h1 br::after {
+    content: "Heitor Gonçalves";
+    color: #0088ff;
+}
+
+.apresentacao h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.btn-inicio {
+    background: linear-gradient(to right, #E9A65A, #C2853D);
+    border: none;
+    color: #ffffff;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.btn-inicio:hover {
+    opacity: 0.9;
+}
+
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px;
+}
+
+.avatar img {
+    position: relative;
+    max-height: 100%;
+    z-index: 2;
+}
+
+.retangulo-fundo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 600px;
+    background: linear-gradient(135deg, #E9A65A 30%, #C2853D);
+    z-index: 1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* SEÇÃO SOBRE */
+.sobre {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.sobre h2 {
+    font-size: 42px;
+}
+
+.sobre h2 span {
+    color: #E9A65A;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* SEÇÃO PROJETOS */
+.projetos {
+    padding: 80px;
+}
+
+.projetos > h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.projetos div.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0;
+}
+
+.projeto {
+    background-color: #000455;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto h3 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Ajustes feitos aqui para a imagem */
+.projeto img {
+    width: 100%;
+    height: 160px; /* Mantém a altura fixa da área da imagem na caixa */
+    object-fit: contain; /* Mostra a imagem inteira sem cortar, preservando proporções */
+    object-position: center; /* Centraliza a imagem na caixa */
+    border-radius: 8px;
+    background-color: #000230; /* Fundo caso a imagem seja menor que o espaço */
+}
+
+.projeto p {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.btn-card {
+    background: linear-gradient(to right, #E9A65A, #C2853D);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* SEÇÃO HABILIDADES */
+.habilidades {
+    padding: 80px;
+}
+
+.habilidades h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.habilidades h3 {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+    color: #E9A65A;
+}
+
+.habilidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.habilidades li {
+    background-color: #000455;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* SEÇÃO FORMAÇÃO */
+.formacao {
+    padding: 80px;
+}
+
+.formacao h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.formacao h3 {
+    font-size: 20px;
+    color: #E9A65A;
+    margin-top: 20px;
+}
+
+.formacao p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* SEÇÃO CONTATO */
+.contato {
+    padding: 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contato h3 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* Agrupa e estiliza os links de contato em formato de botões ou pílulas modernas */
+.contato a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000455;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 250px; /* Garante que todos tenham a mesma largura */
+}
+
+/* Efeito ao passar o mouse */
+.contato a:hover {
+    background: linear-gradient(to right, #E9A65A, #C2853D);
+    border-color: transparent;
+    transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000230;
+    color: #b1b1b1;
+    font-size: 14px;
+}
