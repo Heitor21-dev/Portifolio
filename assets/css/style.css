@@ -1,502 +1,407 @@
-
-/* ==========================================
-   RESPONSIVIDADE DO PORTFÓLIO
-   Desktop, notebook, tablet e celular
-========================================== */
-
-/* Ajustes gerais */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-    overflow-x: clip;
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    min-width: 320px;
-    overflow-x: clip;
+    background: linear-gradient(to left, #000345 20%, #0009AB);
+    color: #ffffff;
 }
 
-img {
-    max-width: 100%;
+/* CABEÇALHO */
+/* .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    gap: 20px;
+    background: rgba(0, 9, 171, 0.210);
+    backdrop-filter: blur(8px);
+    position: fixed;
 }
 
-/* Evita que os elementos ultrapassem a tela */
-.inicio,
-.sobre,
-.projetos,
-.habilidades,
-.formacao,
+.cabecalho nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+} */
+
+/* APRESENTAÇÃO */
+/* .inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    height: 80vh;
+    width: 100%;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+.apresentacao br {
+    font-size: 20px;
+    color: #E9A65A;
+}
+
+.avatar img {
+    max-width: 200px;
+    height: auto;
+    padding-right: 30px;
+} */
+/* 
+.btn-inicio {
+    background: linear-gradient(to left, #E9A65A, #835D33);
+    border: none;
+    color: #ffffff;
+    padding: 8px 80px;
+    cursor: pointer;
+    border-radius: 10px;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, #000345 20%, #0009AB);
+    color: #ffffff;
+}
+
+/* CABEÇALHO FIXO */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 3, 69, 0.3);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* SEÇÃO INÍCIO (HERO) */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 120px 20px 80px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.apresentacao h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'sans-serif';
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.apresentacao h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.apresentacao h1 br {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.apresentacao h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.apresentacao span {
+    color: #009DFF;
+}
+
+.btn-inicio {
+    background: linear-gradient(to right, #E9A65A, #C2853D);
+    border: none;
+    color: #ffffff;
+    padding: 14px 130px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.btn-inicio:hover {
+    opacity: 0.9;
+}
+
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px;
+}
+
+.avatar img {
+    position: relative;
+    width: 600px;
+    z-index: 2;
+}
+
+.retangulo-fundo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 700px;
+    background: linear-gradient(135deg, #E9A65A 30%, #C2853D);
+    z-index: 1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* SEÇÃO SOBRE */
+.sobre {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.sobre h2 {
+    font-size: 42px;
+}
+
+.sobre h2 span {
+    color: #E9A65A;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+span{
+    color: #E9A65A;
+}
+
+/* SEÇÃO PROJETOS */
+.projetos {
+    padding: 80px;
+}
+
+.projetos>h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.projetos div.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0;
+}
+
+.projeto {
+    background-color: #000455;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto h3 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Ajustes feitos aqui para a imagem */
+.projeto img {
+    width: 100%;
+    height: 160px;
+    /* Mantém a altura fixa da área da imagem na caixa */
+    object-fit: contain;
+    /* Mostra a imagem inteira sem cortar, preservando proporções */
+    object-position: center;
+    /* Centraliza a imagem na caixa */
+    border-radius: 8px;
+    background-color: #000230;
+    /* Fundo caso a imagem seja menor que o espaço */
+}
+
+.projeto p {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.btn-card {
+    background: linear-gradient(to right, #E9A65A, #C2853D);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* SEÇÃO HABILIDADES */
+.habilidades {
+    padding: 80px;
+}
+
+.habilidades h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.habilidades h3 {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+    color: #E9A65A;
+}
+
+.habilidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.habilidades li {
+    background-color: #000455;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* SEÇÃO FORMAÇÃO */
+.formacao {
+    padding: 80px;
+}
+
+.formacao h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.formacao h3 {
+    font-size: 20px;
+    color: #E9A65A;
+    margin-top: 20px;
+}
+
+.formacao p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* SEÇÃO CONTATO */
 .contato {
-    min-width: 0;
-    max-width: 100%;
+    padding: 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-/* ==========================================
-   NOTEBOOKS E COMPUTADORES MENORES
-   Até 1200px
-========================================== */
-
-@media (max-width: 1200px) {
-
-    /* Cabeçalho */
-    .cabecalho {
-        height: 75px;
-    }
-
-    .cabecalho nav {
-        gap: clamp(16px, 2.5vw, 30px);
-    }
-
-    .cabecalho nav a {
-        font-size: 15px;
-    }
-
-    /* Hero */
-    .inicio {
-        padding: 100px 5% 40px;
-        gap: 25px;
-    }
-
-    .apresentacao {
-        flex: 1;
-        min-width: 0;
-    }
-
-    .apresentacao h1 {
-        font-size: clamp(34px, 4vw, 48px);
-        overflow-wrap: anywhere;
-    }
-
-    .apresentacao h2 {
-        font-size: clamp(28px, 3.5vw, 40px);
-    }
-
-    .apresentacao h3 {
-        font-size: clamp(15px, 1.7vw, 20px);
-    }
-
-    .btn-inicio {
-        max-width: 100%;
-        padding: 14px clamp(24px, 5vw, 70px);
-    }
-
-    .avatar {
-        flex: 1;
-        min-width: 0;
-        height: auto;
-        min-height: 320px;
-        align-self: stretch;
-    }
-
-    .avatar img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        align-self: flex-end;
-    }
-
-    .retangulo-fundo {
-        width: 55%;
-        height: 100%;
-    }
-
-    /* Espaçamento das seções */
-    .sobre,
-    .projetos,
-    .habilidades,
-    .formacao,
-    .contato {
-        padding: 70px 5%;
-    }
-
-    /* Projetos */
-    .projetos div.projetos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px;
-    }
-
-    /* Contato */
-    .contato {
-        flex-wrap: wrap;
-    }
-
-    .contato a {
-        width: auto;
-        min-width: 180px;
-        max-width: 100%;
-    }
+.contato h3 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
-/* ==========================================
-   TABLETS E NOTEBOOKS COM TELA ESTREITA
-   Até 768px
-========================================== */
-
-@media (max-width: 768px) {
-
-    /* Cabeçalho */
-    .cabecalho {
-        height: auto;
-        min-height: 65px;
-        padding: 15px 4%;
-    }
-
-    .cabecalho nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px 20px;
-    }
-
-    .cabecalho nav a {
-        font-size: 14px;
-    }
-
-    /* Hero */
-    .inicio {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-        margin-top: 0;
-        padding: 115px 6% 40px;
-        min-height: auto;
-    }
-
-    .apresentacao {
-        width: 100%;
-        max-width: 540px;
-        align-items: center;
-        text-align: center;
-        gap: 14px;
-    }
-
-    .apresentacao h2 {
-        font-size: clamp(26px, 5vw, 34px);
-    }
-
-    .apresentacao h1 {
-        font-size: clamp(32px, 7vw, 44px);
-        line-height: 1.15;
-        overflow-wrap: normal;
-    }
-
-    .apresentacao h3 {
-        font-size: clamp(14px, 3vw, 18px);
-        letter-spacing: 0.5px;
-    }
-
-    .apresentacao p {
-        font-size: 16px;
-    }
-
-    .btn-inicio {
-        width: auto;
-        max-width: 100%;
-        padding: 13px 28px;
-        font-size: 15px;
-    }
-
-    /* Foto do Hero */
-    .avatar {
-        width: 100%;
-        max-width: 420px;
-        min-height: 0;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        align-self: center;
-        align-items: flex-end;
-        overflow: hidden;
-    }
-
-    .avatar img {
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: bottom center;
-        z-index: 2;
-    }
-
-    .retangulo-fundo {
-        width: 55%;
-        height: 85%;
-        right: 0;
-        bottom: 0;
-    }
-
-    /* Sobre */
-    .sobre {
-        width: 100%;
-        max-width: 100%;
-        padding: 55px 6%;
-        gap: 16px;
-    }
-
-    .sobre h2 {
-        font-size: clamp(28px, 5vw, 36px);
-    }
-
-    .sobre p {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-
-    /* Projetos */
-    .projetos {
-        padding: 55px 6%;
-    }
-
-    .projetos > h2 {
-        font-size: clamp(27px, 5vw, 34px);
-        margin-bottom: 28px;
-    }
-
-    .projetos div.projetos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-    }
-
-    .projeto {
-        min-width: 0;
-        padding: 18px;
-        gap: 12px;
-    }
-
-    .projeto h3 {
-        font-size: 16px;
-        overflow-wrap: anywhere;
-    }
-
-    .projeto img {
-        height: 140px;
-    }
-
-    .projeto p {
-        line-height: 1.5;
-    }
-
-    .btn-card {
-        padding: 10px;
-        font-size: 13px;
-    }
-
-    /* Habilidades */
-    .habilidades {
-        padding: 55px 6%;
-    }
-
-    .habilidades h2,
-    .formacao h2 {
-        font-size: 30px;
-    }
-
-    .habilidades ul {
-        gap: 10px;
-    }
-
-    .habilidades li {
-        padding: 9px 14px;
-        font-size: 14px;
-    }
-
-    /* Formação */
-    .formacao {
-        padding: 55px 6%;
-    }
-
-    .formacao h3 {
-        font-size: 18px;
-        line-height: 1.4;
-    }
-
-    /* Contato */
-    .contato {
-        padding: 45px 6%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 14px;
-    }
-
-    .contato h3 {
-        font-size: 30px;
-        margin-bottom: 8px;
-    }
-
-    .contato a {
-        width: 100%;
-        min-width: 0;
-        padding: 13px 18px;
-    }
-
-    /* Rodapé */
-    .footer {
-        padding: 24px 6%;
-        font-size: 12px;
-        line-height: 1.6;
-    }
+/* Agrupa e estiliza os links de contato em formato de botões ou pílulas modernas */
+.contato a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000455;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 250px;
+    /* Garante que todos tenham a mesma largura */
 }
 
-/* ==========================================
-   CELULARES
-   Até 480px
-========================================== */
-
-@media (max-width: 480px) {
-
-    /* Navegação compacta */
-    .cabecalho {
-        padding: 12px 3%;
-    }
-
-    .cabecalho nav {
-        gap: 10px 14px;
-    }
-
-    .cabecalho nav a {
-        font-size: 12px;
-    }
-
-    /* Hero */
-    .inicio {
-        padding: 105px 5% 30px;
-        gap: 20px;
-    }
-
-    .apresentacao h2 {
-        font-size: 26px;
-    }
-
-    .apresentacao h1 {
-        font-size: clamp(28px, 8vw, 36px);
-    }
-
-    .apresentacao h3 {
-        font-size: 13px;
-    }
-
-    .apresentacao p {
-        font-size: 14px;
-    }
-
-    .btn-inicio {
-        padding: 12px 22px;
-        font-size: 14px;
-    }
-
-    .avatar {
-        width: 100%;
-        max-width: 340px;
-    }
-
-    /* Seções */
-    .sobre,
-    .projetos,
-    .habilidades,
-    .formacao {
-        padding: 42px 5%;
-    }
-
-    .sobre h2,
-    .projetos > h2 {
-        font-size: 27px;
-    }
-
-    .sobre p {
-        font-size: 14px;
-    }
-
-    /* Um projeto por linha */
-    .projetos div.projetos {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-    }
-
-    .projeto {
-        padding: 18px;
-    }
-
-    .projeto h3 {
-        font-size: 17px;
-    }
-
-    .projeto img {
-        height: 170px;
-    }
-
-    .projeto p {
-        font-size: 14px;
-    }
-
-    /* Habilidades */
-    .habilidades h2,
-    .formacao h2 {
-        font-size: 27px;
-    }
-
-    .habilidades h3,
-    .formacao h3 {
-        font-size: 17px;
-    }
-
-    .habilidades li {
-        padding: 8px 12px;
-        font-size: 13px;
-    }
-
-    .formacao p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    /* Contato */
-    .contato {
-        padding: 40px 5%;
-    }
-
-    .contato h3 {
-        font-size: 27px;
-    }
-
-    .contato a {
-        font-size: 14px;
-    }
-
-    /* Rodapé */
-    .footer {
-        padding: 20px 5%;
-        font-size: 11px;
-    }
+/* Efeito ao passar o mouse */
+.contato a:hover {
+    background: linear-gradient(to right, #E9A65A, #C2853D);
+    border-color: transparent;
+    transform: translateY(-3px);
 }
 
-/* ==========================================
-   CELULARES MUITO PEQUENOS
-   Até 360px
-========================================== */
-
-@media (max-width: 360px) {
-
-    .cabecalho nav {
-        gap: 9px 12px;
-    }
-
-    .cabecalho nav a {
-        font-size: 11px;
-    }
-
-    .inicio {
-        padding-inline: 4%;
-    }
-
-    .apresentacao h1 {
-        font-size: 27px;
-    }
-
-    .btn-inicio {
-        padding: 12px 16px;
-    }
-
-    .projeto {
-        padding: 14px;
-    }
+/* RODAPÉ */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000230;
+    color: #b1b1b1;
+    font-size: 14px;
 }
